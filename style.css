@@ -16,7 +16,7 @@
 
 .top-nav {
     border: 5px solid red;
-    background-color: #212529;
+    background-color: #2C3E50;
     display: flex;
     justify-content: space-between;
     padding: 1rem;
@@ -119,7 +119,7 @@ nav ul li a:hover {
 
 .portfolio h1 {
     font-size: 5rem;
-    color: #212529;
+    color: #2C3E50;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -249,7 +249,7 @@ nav ul li a:hover {
     color: white;
 }
 
-.contact-me {}
+
 
 .contact-me-title {
     border: 5px solid black;
@@ -261,7 +261,7 @@ nav ul li a:hover {
 
 .h1-ctn {
     font-size: 5rem;
-    color: #212529;
+    color: #2C3E50;
     align-items: center;
     justify-content: center;
 }
@@ -300,4 +300,44 @@ form input {
 }
 
 
-.ctc-me-form {}
+.top-footer{
+    border: 5px solid green;
+}
+
+.footer-card{
+    border: 5px solid blue;
+    width:33%;
+    height: 20vh;
+    padding:1rem;
+}
+
+.top-footer{
+    border: 5px solid red;
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: #2C3E50;
+    color: white;
+    padding: 4rem;
+    flex-wrap: wrap;
+}
+
+.footer-card{
+    text-align: center;
+
+}
+
+.footer-card p{
+    margin-top:7px;
+}
+
+.bottom-footer{
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding:1rem;
+}
