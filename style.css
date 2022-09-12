@@ -122,6 +122,7 @@ nav ul li a:hover {
     color: #212529;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 .port-h{
     border: 5px solid red;
@@ -166,4 +167,63 @@ nav ul li a:hover {
     display: flex;
     margin-top: 6%;
     margin-left: 7%;
+}
+
+/* about section */
+
+.about{
+    /* font-size: 4rem; */
+    border: 10px solid purple;
+    color: white;
+    background-color: #1ABC9C;
+    align-content: center;
+    justify-content: center;
+    /* padding-left: 28vw; */
+
+
+}
+
+.abt-title{
+    border: 5px solid black;
+    width:50%;
+    justify-content: center;
+    text-align: center;
+    margin:0 auto;
+
+
+
+}
+.h1-about{
+    font-size: 5rem;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.abt-sep{
+width:100%;
+}
+
+.abt-content{
+    border: 5px solid red;
+    display: flex;
+    width: 50vw;
+    height :auto;
+    margin-top: 5%;
+    margin:0 auto;
+}
+.abt-content p{
+    font-size: 1.6rem;
+}
+
+.abt-ctn-left{
+    border: 5px solid blue;
+    width: 50%;
+}
+.abt-ctn-right{
+    border: 5px solid green;
+    width: 50%;
+}
+
+.abt-btn{
+
 }
