@@ -21,7 +21,27 @@ function validateName(name) {
 
 // A function that validates Email addresses
 function validateEmail(email){
-    
+    const email_array = email.split("@");
+
+    for(let i=0; i<email_array.length; i++){
+    console.log(email_array[i]);
+    }
+
+    if(email_array.length!=2){
+        const node = document.createElement("li");
+        const textnode = document.createTextNode("Invalid email.Email should be of the form someone@someone");
+        node.appendChild(textnode);
+        error_box.appendChild(node);
+    }
+    else{
+        if(email_array[0].length<3 || email_array[1].length<5){
+        const node = document.createElement("li");
+        const textnode = document.createTextNode("Invalid email. Should be at least 3 characters before @ and 5 after it.");
+        node.appendChild(textnode);
+        error_box.appendChild(node);
+        }
+
+    }
 }
 
 
@@ -42,6 +62,7 @@ function main() {
     console.log(msg);
 
     validateName(full_name);
+    validateEmail(email);
 
 
 }
