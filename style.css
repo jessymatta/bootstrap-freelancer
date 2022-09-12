@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Noto Sans', sans-serif;
-
 }
 
 
@@ -11,7 +10,6 @@
 .container {
     padding: 0;
     width: 100%;
-    /* height: 100vh; */
     display: flex;
     flex-direction: column;
 }
@@ -26,6 +24,10 @@
     width: 100%;
 
     height: 80px;
+}
+
+.form-btn-send {
+    cursor: pointer;
 }
 
 .top-nav ul {
@@ -80,7 +82,6 @@ nav ul li a:hover {
 }
 
 .top-nav2 {
-    /* border: 5px solid red; */
     padding: 0.7rem;
     background-color: white;
     height: fit-content;
@@ -94,16 +95,8 @@ nav ul li a:hover {
     color: gray;
 }
 
-.icons-nav2 {
-    /* border: 5px solid blue; */
-    /* display: flex;
-justify-content: space-between; */
-
-}
-
 .icons-nav2 img {
     margin-left: 2rem;
-    /* position: absolute; */
 }
 
 .icons-nav2 img {
@@ -112,7 +105,6 @@ justify-content: space-between; */
 }
 
 .git-button {
-    /* border: 5px solid green; */
     display: flex;
     align-items: center;
 
@@ -138,31 +130,25 @@ justify-content: space-between; */
 
 .hero {
     background-color: #1ABC9C;
-    /* background-size: cover;
-    background-repeat: no-repeat; */
-    /* background-position: center; */
     color: #fff;
     position: relative;
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
 }
 
 .hero-content {
-    border: 5px solid red;
-    /* margin-top:7rem; */
+
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
-    /*align-items: center; */
     flex-direction: column;
 }
 
 .hero-content img {
     width: 240px;
     height: 250px;
-    /* position: absolute; */
+
 }
 
 .hero-heading {
@@ -174,14 +160,12 @@ justify-content: space-between; */
 }
 
 .hero-img-text {
-    border: 5px solid green;
     align-items: center;
     text-align: center;
 }
 
 /* Portfolio section */
 .portfolio {
-    border: 8px solid purple;
 
     width: 100%;
     height: auto;
@@ -195,7 +179,6 @@ justify-content: space-between; */
 
 
 .portfolio h1 {
-    border: 5px solid red;
     font-size: 3rem;
     color: #2C3E50;
     align-items: center;
@@ -209,7 +192,6 @@ hr {
 }
 
 .cards {
-    border: 5px solid blue;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -220,19 +202,15 @@ hr {
 }
 
 .card {
-    border: 5px solid red;
     width: 33%;
     height: auto;
     border-radius: 6px;
-    /* margin:5px;
-    margin: 5%; */
     display: flex;
     flex-direction: column;
 
 }
 
 .top-imgs {
-    border: 5px solid black;
     width: 100%;
     display: flex;
     justify-content: space-between !important;
@@ -244,13 +222,13 @@ hr {
 }
 
 .btm-imgs {
-    border: 5px solid pink;
     width: 100%;
     display: flex;
     justify-content: space-between !important;
     align-items: center;
     flex-wrap: wrap;
     margin: 0 auto;
+    margin-top: 5px;
 }
 
 /* About section */
@@ -285,22 +263,13 @@ hr {
     margin-bottom: 1rem;
 }
 
-/* .abt-sep {
-    width: 100%;
-} */
-
 .abt-content {
-    border: 5px solid blue;
     display: flex;
     width: 50vw;
     height: auto;
     margin-top: 5%;
     margin: 0 auto;
     flex-direction: row;
-    /* padding-left:10vw ;
-    padding-right:10vw ; */
-    /* flex-wrap: wrap; */
-
 
 }
 
@@ -309,20 +278,16 @@ hr {
 }
 
 .abt-ctn-left {
-    border: 5px solid green;
     width: 80%;
 }
 
 .abt-ctn-right {
-    border: 5px solid green;
     width: 80%;
     margin-left: 1rem;
 }
 
 .abt-btn {
-    border: 5px solid green;
     margin: 0 auto;
-
     width: 20vw;
     justify-items: center;
     padding: 0.5rem;
@@ -352,7 +317,6 @@ hr {
 }
 
 .h1-ctn {
-    border: 5px solid blue;
     font-size: 3rem;
     color: #2C3E50;
     align-items: center;
@@ -443,7 +407,6 @@ form input {
 }
 
 .footer-icons-container {
-    border: 2px solid white;
     display: flex;
     margin: 0 auto;
     width: 50%;
@@ -496,13 +459,14 @@ form input {
     }
 
     .hero-heading {
-        display: flex;
-        flex-direction: column;
-        width: 10%;
+        /* display: flex;
+        flex-direction: column; */
+        width: 100%;
         font-size: 2rem;
         text-align: center;
-
-        margin-right: 30vw;
+margin: 0 auto;
+/* margin-right:0.5rem ; */
+        /* margin-right: 30vw; */
     }
 
     .portfolio {
@@ -545,13 +509,7 @@ form input {
     .icons-nav2 {
         display: none;
     }
-
-    .about {
-        border: 5px solid blue;
-    }
-
     .abt-content {
-        border: 5px solid red;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -566,7 +524,6 @@ form input {
     }
 
     .contact-me {
-        border: 5px solid purple;
         width: 100%;
     }
 
@@ -574,23 +531,22 @@ form input {
         display: none;
     }
 
-    footer {
-        border: 5px solid purple;
-    }
 
-    .footer-card{
-        border: 5px solid white;
+
+    .footer-card {
         width: 100%;
         margin-top: 20px;
     }
 
     .form-btn-send {
-        width:100%
+        width: 100%
     }
+.footer-icons-container{
+    width:100%;
+}
+
+
 
 
 
 }
-
-/* For small Devices, Tablets */
-@media only screen and (min-width : 540px) and (max-width :920px) {}

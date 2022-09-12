@@ -6,10 +6,21 @@ function reset() {
     document.getElementById("email_address").value = "";
     document.getElementById("phone_nb").value = "";
     document.getElementById("msg").value = "";
-    document.getElementById("alert-error").li.value = "";
-    $("#alert-error").empty();
-    // $('#alert-error div').empty();
 
+    //note that clearing the div did not work properly so error msgs wont reset
+    // document.getElementById("alert-error").li.value = "";
+    // $("#alert-error li").empty();
+    // document.getElementById("alert-error").innerHTML = "";
+    // clearBox('alert-error');
+}
+// error_box.style.backgroundColor = "blue";
+
+function clearBox(elementID) {
+    var div = document.getElementById(elementID);
+
+    while (div.firstChild) {
+        div.removeChild(div.firstChild);
+    }
 }
 
 // A function that validate the full name (minimum length 5)
@@ -23,67 +34,67 @@ function validateName(name) {
 }
 
 // A function that validates Email addresses
-function validateEmail(email){
+function validateEmail(email) {
     const email_array = email.split("@");
 
-    for(let i=0; i<email_array.length; i++){
-    console.log(email_array[i]);
+    for (let i = 0; i < email_array.length; i++) {
+        console.log(email_array[i]);
     }
 
-    if(email_array.length!=2){
+    if (email_array.length != 2) {
         const node = document.createElement("li");
         const textnode = document.createTextNode("Invalid email.Email should be of the form someone@someone");
         node.appendChild(textnode);
         error_box.appendChild(node);
     }
-    else{
-        if(email_array[0].length<3 || email_array[1].length<5){
-        const node = document.createElement("li");
-        const textnode = document.createTextNode("Invalid email. Should be at least 3 characters before @ and 5 after it.");
-        node.appendChild(textnode);
-        error_box.appendChild(node);
+    else {
+        if (email_array[0].length < 3 || email_array[1].length < 5) {
+            const node = document.createElement("li");
+            const textnode = document.createTextNode("Invalid email. Should be at least 3 characters before @ and 5 after it.");
+            node.appendChild(textnode);
+            error_box.appendChild(node);
         }
     }
 }
 
 // A function that validates the phone number
-function validatePhoneNb(phone_nbr){
+function validatePhoneNb(phone_nbr) {
 
-    if(phone_nbr.length<11){
+    if (phone_nbr.length < 11) {
         const node = document.createElement("li");
         const textnode = document.createTextNode("Invalid phone number. Too short.");
         node.appendChild(textnode);
         error_box.appendChild(node);
     }
-    else{
-    let start_code = phone_nbr.slice(0, 4);
-    if(start_code!="+961"){
-        const node = document.createElement("li");
-        const textnode = document.createTextNode("Invalid email. Should start with +961");
-        node.appendChild(textnode);
-        error_box.appendChild(node);
-    }
-    else{
-        if(phone_nbr.charAt(4)==3 && (phone_nbr.slice(5).isNan()==false || phone_nbr.slice(5).length!=6)){
+    else {
+        let start_code = phone_nbr.slice(0, 4);
+        if (start_code != "+961") {
             const node = document.createElement("li");
-            const textnode = document.createTextNode("Invalid email.");
+            const textnode = document.createTextNode("Invalid email. Should start with +961");
             node.appendChild(textnode);
             error_box.appendChild(node);
         }
+        else {
+            if (phone_nbr.charAt(4) == 3 && (phone_nbr.slice(5).isNan() == false || phone_nbr.slice(5).length != 6)) {
+                const node = document.createElement("li");
+                const textnode = document.createTextNode("Invalid email.");
+                node.appendChild(textnode);
+                error_box.appendChild(node);
+            }
 
-        else if(phone_nbr.slice(4).length!=8){
-            const node = document.createElement("li");
-            const textnode = document.createTextNode("Invalid email.");
-            node.appendChild(textnode);
-            error_box.appendChild(node);
+            else if (phone_nbr.slice(4).length != 8) {
+                const node = document.createElement("li");
+                const textnode = document.createTextNode("Invalid email.");
+                node.appendChild(textnode);
+                error_box.appendChild(node);
+            }
+
         }
-
     }
-}
 }
 
 // A function that validates the message in textarea
-function validateMsg(msg){
+function validateMsg(msg) {
     if (msg.length < 100) {
         const node = document.createElement("li");
         const textnode = document.createTextNode("Messages should be at least 100 characters long.");
@@ -95,6 +106,7 @@ function validateMsg(msg){
 
 // Main function
 function main() {
+
     let full_name = document.getElementById("full_name").value;
     console.log(full_name);
 
@@ -112,7 +124,7 @@ function main() {
 
     validatePhoneNb(phone_nbr);
     validateMsg(msg);
-    
+
 
 
 }
