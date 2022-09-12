@@ -424,7 +424,10 @@ form input {
     margin-top: 10px;
 }
 
-
+.link-footer{
+    text-decoration: underline;
+    color: #1ABC9C;
+}
 /* Media queries */
 
 /* For mobile devices */
@@ -513,6 +516,11 @@ margin: 0 auto;
         width: 100%;
         display: flex;
         flex-direction: column;
+        margin:0;
+        padding:0;
+    }
+    .abt-content button{
+        width:100px;
     }
 
     .abt-ctn-left {
@@ -543,6 +551,10 @@ margin: 0 auto;
     }
 .footer-icons-container{
     width:100%;
+}
+
+.mobile-btn{
+    width:100vw;
 }
 
 
