@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -7,9 +6,7 @@
 
 }
 
-.hero{
-
-}
+.hero {}
 
 .container {
     padding: 0;
@@ -17,7 +14,7 @@
     height: 100vh;
 }
 
-.top-nav{
+.top-nav {
     border: 5px solid red;
     background-color: #212529;
     display: flex;
@@ -57,7 +54,7 @@ nav ul li a:hover {
     margin-right: 0px;
 }
 
-.nav-button  {
+.nav-button {
     color: white;
     font-weight: bolder;
     font-size: 1.1rem;
@@ -66,14 +63,15 @@ nav ul li a:hover {
     padding: 7px;
     border-radius: 2px;
 }
-.top-nav p{
+
+.top-nav p {
     color: white;
     font-weight: 700;
 }
 
 .nav-button:hover {
     /* background: rgba(255, 255, 255, 0.5); */
-    color:#1ABC9C;
+    color: #1ABC9C;
 }
 
 .hero {
@@ -95,19 +93,20 @@ nav ul li a:hover {
     flex-direction: column;
 }
 
-.hero-content img{
+.hero-content img {
     height: 35%;
     width: 18%;
 }
 
-.hero-heading{
+.hero-heading {
     font-size: 5rem;
 }
-.hero-text{
+
+.hero-text {
     margin-top: 2%;
 }
 
-.portfolio{
+.portfolio {
     border: 5px solid red;
     width: 100%;
     height: auto;
@@ -117,30 +116,33 @@ nav ul li a:hover {
     align-items: center;
     flex-direction: column;
 }
-.portfolio h1{
+
+.portfolio h1 {
     font-size: 5rem;
     color: #212529;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-.port-h{
+
+.port-h {
     border: 5px solid red;
 
 }
-.sep{
+
+.sep {
     width: 50%;
 }
 
-.cards{
+.cards {
     border: 5px solid blue;
     display: flex;
     flex-direction: column;
-    padding:2rem;
+    padding: 2rem;
     /* flex-wrap: wrap; */
 }
 
-.card{
+.card {
     border: 5px solid green;
     width: 60%;
     height: auto;
@@ -149,7 +151,7 @@ nav ul li a:hover {
 
 }
 
-.top-imgs{
+.top-imgs {
     width: 100%;
     border: 5px solid pink;
     display: flex;
@@ -162,7 +164,7 @@ nav ul li a:hover {
 
 }
 
-.btm-imgs{
+.btm-imgs {
     border: 5px solid black;
     display: flex;
     margin-top: 6%;
@@ -171,7 +173,7 @@ nav ul li a:hover {
 
 /* about section */
 
-.about{
+.about {
     /* font-size: 4rem; */
     border: 10px solid purple;
     color: white;
@@ -183,47 +185,119 @@ nav ul li a:hover {
 
 }
 
-.abt-title{
+.abt-title {
     border: 5px solid black;
-    width:50%;
+    width: 50%;
     justify-content: center;
     text-align: center;
-    margin:0 auto;
+    margin: 0 auto;
 
 
 
 }
-.h1-about{
+
+.h1-about {
     font-size: 5rem;
     color: white;
     align-items: center;
     justify-content: center;
 }
-.abt-sep{
-width:100%;
+
+.abt-sep {
+    width: 100%;
 }
 
-.abt-content{
+.abt-content {
     border: 5px solid red;
     display: flex;
     width: 50vw;
-    height :auto;
+    height: auto;
     margin-top: 5%;
-    margin:0 auto;
+    margin: 0 auto;
 }
-.abt-content p{
+
+.abt-content p {
     font-size: 1.6rem;
 }
 
-.abt-ctn-left{
+.abt-ctn-left {
     border: 5px solid blue;
     width: 50%;
 }
-.abt-ctn-right{
+
+.abt-ctn-right {
     border: 5px solid green;
     width: 50%;
 }
 
-.abt-btn{
+.abt-btn {
+    margin: 0 auto;
+    border: 5px solid black;
+    width: 10%;
+    justify-items: center;
+    padding: 0.5rem;
+    margin-top: 2%;
 
 }
+
+.abt-btn button {
+    width: 100%;
+    height: 5%;
+    border-radius: 15px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+.contact-me {}
+
+.contact-me-title {
+    border: 5px solid black;
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.h1-ctn {
+    font-size: 5rem;
+    color: #212529;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    border: 5px solid red;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+form label {
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+form input {
+
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    height: 4vh;
+}
+
+.form-btn-send {
+    width:24%;
+    height:7vh;
+    background-color: #1ABC9C;
+    color:white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    border:none;
+    margin-top:5px;
+}
+
+
+.ctc-me-form {}
