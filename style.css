@@ -75,3 +75,34 @@ nav ul li a:hover {
     /* background: rgba(255, 255, 255, 0.5); */
     color:#1ABC9C;
 }
+
+.hero {
+    background-color: #1ABC9C;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    position: relative;
+}
+
+.hero-content {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-content img{
+    height: 35%;
+    width: 18%;
+}
+
+.hero-heading{
+    font-size: 5rem;
+}
+.hero-text{
+    margin-top: 2%;
+}
