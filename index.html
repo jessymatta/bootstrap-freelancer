@@ -11,11 +11,28 @@
     <title>Freelancer - Start Bootstrap Theme</title>
     <link rel="icon" type="image/x-icon" href="./images/icon1.jpeg" />
 </head>
-
-<body>
+<!-- class="container" kenet bl -->
+<body >
     <!-- Start Hero -->
     <div class="hero container ">
         <!-- Start Navigation Bar -->
+        <nav class="top-nav2">
+            <div class="nav2-content">
+                <p>Overview Page</p>
+            </div>
+
+            <div class="icons-nav2">
+                <img src="./images/desktop.png">
+                <img src="./images/tablet.png">
+                <img src="./images/phone.png">
+            </div>
+
+            <div class="git-button">
+                <img src="./images/github.png">
+                <button>Free Download</button>
+            </div>
+
+        </nav>
 
         <nav class="top-nav">
             <p class="nav-button">START BOOTSTRAP</p>
@@ -30,12 +47,14 @@
 
         <!-- Start Hero Content -->
         <section class="hero-content">
+            <div class="hero-img-text">
             <img class="mobile-img" src="./images/img2.png">
             <h1 class="hero-heading ">
                 START BOOTSTRAP
             </h1>
             <h1>_________________________________________</h1>
             <p class="hero-text">Graphic Artist - Web Designer - Illustrator</p>
+        </div>
         </section>
         <!-- End Hero Content -->
     </div>
@@ -45,8 +64,8 @@
     <!-- START PORTFOLIO SECTION -->
     <section class="portfolio">
         <div class="port-h">
-            <h1>PORTFOLIO</h1>
-            <h1 class="sep">________________</h1>
+            <h1>PORTFOLIO<hr></h1>
+
         </div>
 
         <div class="cards">
@@ -54,36 +73,36 @@
 
 
             <div class="top-imgs">
-                <div>
+              
                     <img class="card" src="./images/1.jpg">
-                </div>
+        
 
 
-                <div>
+              
                     <img class="card" src="./images/2.jpg">
-                </div>
+            
 
 
-                <div>
+          
                     <img class="card" src="./images/3.jpg">
-                </div>
+      
 
             </div>
-
-            <div class="btm-imgs">
-                <div>
+ 
+            <div class="btm-imgs"> 
+         
                     <img class="card" src="./images/4.jpg">
-                </div>
+        
 
 
-                <div>
+          
                     <img class="card" src="./images/5.jpg">
-                </div>
+             
 
-                <div>
+           
                     <img class="card" src="./images/6.jpg">
-                </div>
-            </div>
+            
+          </div>
         </div>
     </section>
     <!-- END PORTFOLIO SECTION -->
@@ -93,7 +112,7 @@
     <section class="about">
 
         <div class="abt-title">
-            <h1 class="h1-about">ABOUT</h1>
+            <h1 class="h1-about">ABOUT<hr></h1>
             <h1 class="abt-sep">________________</h1>
         </div>
 
@@ -126,7 +145,7 @@
 
         <div class="contact-me-title">
             <h1 class="h1-ctn">CONTACT ME</h1>
-            <h1>_____________________________</h1>
+            <h1 class="mobilesep">_____________________________</h1>
         </div>
 
 
@@ -138,16 +157,16 @@
             <label>Phone number</label>
             <input id="phone_nb">
             <label>Message</label>
-            <textarea  id="msg" rows="10" cols="60" wrap="virtual"></textarea>
+            <textarea id="msg" rows="10" cols="60" wrap="virtual"></textarea>
             <button type="button" class="form-btn-send" id="send-btn" onclick="main()">Send</button>
             <button type="button" class="form-btn-send" id="reset-btn" onclick="reset()">Reset</button>
 
         </form>
-<!-- <div class="alert"> -->
+        <!-- <div class="alert"> -->
         <div id="alert-error" class="alert">
 
         </div>
-    <!-- </div> -->
+        <!-- </div> -->
 
 
     </section>

@@ -15,7 +15,7 @@ function reset() {
 // A function that validate the full name (minimum length 5)
 function validateName(name) {
     if (name.length < 5) {
-        const node = document.createElement("p");
+        const node = document.createElement("li");
         const textnode = document.createTextNode("Invalid full name, should be at least 5 characters long");
         node.appendChild(textnode);
         error_box.appendChild(node);
@@ -82,8 +82,15 @@ function validatePhoneNb(phone_nbr){
 }
 }
 
-
-
+// A function that validates the message in textarea
+function validateMsg(msg){
+    if (msg.length < 100) {
+        const node = document.createElement("li");
+        const textnode = document.createTextNode("Messages should be at least 100 characters long.");
+        node.appendChild(textnode);
+        error_box.appendChild(node);
+    }
+}
 
 
 // Main function
@@ -104,6 +111,7 @@ function main() {
     validateEmail(email);
 
     validatePhoneNb(phone_nbr);
+    validateMsg(msg);
     
 
 
