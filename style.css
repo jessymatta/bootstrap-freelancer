@@ -6,7 +6,9 @@
 
 }
 
-.hero {}
+.hero{
+    position:relative;
+}
 
 .container {
     padding: 0;
@@ -15,7 +17,7 @@
 }
 
 .top-nav {
-    border: 5px solid red;
+
     background-color: #2C3E50;
     display: flex;
     justify-content: space-between;
@@ -70,7 +72,7 @@ nav ul li a:hover {
 }
 
 .nav-button:hover {
-    /* background: rgba(255, 255, 255, 0.5); */
+
     color: #1ABC9C;
 }
 
@@ -107,7 +109,7 @@ nav ul li a:hover {
 }
 
 .portfolio {
-    border: 5px solid red;
+
     width: 100%;
     height: auto;
     margin-top: 5%;
@@ -125,25 +127,21 @@ nav ul li a:hover {
     text-align: center;
 }
 
-.port-h {
-    border: 5px solid red;
 
-}
 
 .sep {
     width: 50%;
 }
 
 .cards {
-    border: 5px solid blue;
+ 
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    /* flex-wrap: wrap; */
 }
 
 .card {
-    border: 5px solid green;
+
     width: 60%;
     height: auto;
     border-radius: 20px;
@@ -153,7 +151,7 @@ nav ul li a:hover {
 
 .top-imgs {
     width: 100%;
-    border: 5px solid pink;
+
     display: flex;
     /* margin: 7%; */
     /* justify-content: space-around; */
@@ -165,7 +163,8 @@ nav ul li a:hover {
 }
 
 .btm-imgs {
-    border: 5px solid black;
+    width:100%;
+
     display: flex;
     margin-top: 6%;
     margin-left: 7%;
@@ -174,19 +173,16 @@ nav ul li a:hover {
 /* about section */
 
 .about {
-    /* font-size: 4rem; */
-    border: 10px solid purple;
     color: white;
     background-color: #1ABC9C;
     align-content: center;
     justify-content: center;
-    /* padding-left: 28vw; */
+
 
 
 }
 
 .abt-title {
-    border: 5px solid black;
     width: 50%;
     justify-content: center;
     text-align: center;
@@ -208,12 +204,13 @@ nav ul li a:hover {
 }
 
 .abt-content {
-    border: 5px solid red;
     display: flex;
     width: 50vw;
     height: auto;
     margin-top: 5%;
     margin: 0 auto;
+    
+ 
 }
 
 .abt-content p {
@@ -221,18 +218,19 @@ nav ul li a:hover {
 }
 
 .abt-ctn-left {
-    border: 5px solid blue;
+
     width: 50%;
 }
 
 .abt-ctn-right {
-    border: 5px solid green;
+
     width: 50%;
+    margin-left: 10px;
 }
 
 .abt-btn {
     margin: 0 auto;
-    border: 5px solid black;
+
     width: 10%;
     justify-items: center;
     padding: 0.5rem;
@@ -252,7 +250,6 @@ nav ul li a:hover {
 
 
 .contact-me-title {
-    border: 5px solid black;
     width: 50%;
     justify-content: center;
     text-align: center;
@@ -267,7 +264,6 @@ nav ul li a:hover {
 }
 
 form {
-    border: 5px solid red;
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -288,31 +284,28 @@ form input {
 }
 
 .form-btn-send {
-    width:24%;
-    height:7vh;
+    width: 24%;
+    height: 7vh;
     background-color: #1ABC9C;
-    color:white;
+    color: white;
     font-weight: 600;
     font-size: 1.5rem;
     border-radius: 15px;
-    border:none;
-    margin-top:5px;
+    border: none;
+    margin-top: 5px;
 }
 
 
-.top-footer{
-    border: 5px solid green;
-}
 
-.footer-card{
-    border: 5px solid blue;
-    width:33%;
+.footer-card {
+
+    width: 33%;
     height: 20vh;
-    padding:1rem;
+    padding: 1rem;
 }
 
-.top-footer{
-    border: 5px solid red;
+.top-footer {
+
     width: 100%;
     height: auto;
     margin-top: 5%;
@@ -326,18 +319,106 @@ form input {
     flex-wrap: wrap;
 }
 
-.footer-card{
+.footer-card {
     text-align: center;
 
 }
 
-.footer-card p{
-    margin-top:7px;
+.footer-card p {
+    margin-top: 7px;
 }
 
-.bottom-footer{
-    background-color: black;
-    color:white;
+.bottom-footer {
+background-color: black;
+    color: white;
     text-align: center;
-    padding:1rem;
+    padding: 1rem;
+}
+
+.footer-icons {
+    border: 2px solid white;
+    width: 2rem;
+    height: 2rem;
+    /* padding:0.3rem; */
+    border-radius: 50px;
+
+}
+
+.footer-icons-container {
+    border: 2px solid white;
+    display: flex;
+    margin: 0 auto;
+    width: 50%;
+    justify-content: space-between;
+
+
+}
+
+
+/* Media queries */
+
+/* For mobile devices */
+@media only screen and (min-width: 250px) and (max-width: 480px) {
+
+    .top-nav {
+width:100%;
+
+    }
+
+    .nav-button{
+        font-size: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left:0.2rem;
+        margin-right:0.2rem;
+    }
+
+    .mobile-img{
+        width:240px !important;
+        height:auto;
+    }
+
+    .hero-heading {
+        display: flex;
+        flex-direction: column;
+        width:10%;
+        font-size: 2rem;
+        text-align: center;
+
+        margin-right: 30vw;
+    }
+
+    .portfolio{
+        width:100vw;
+    }
+    .port-h h1{
+        font-size: 2rem !important;
+    }
+  .cards{
+width:100vw;
+  }
+
+  .card{
+    width:100%;
+    margin-top: 10px;
+  }
+  .top-imgs{
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+  }
+
+  .btm-imgs{
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+  }
+
+
+}
+
+/* For small Devices, Tablets */
+@media only screen and (min-width : 540px) and (max-width :920px) {
+   
 }
