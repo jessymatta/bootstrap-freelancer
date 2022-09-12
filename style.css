@@ -106,3 +106,64 @@ nav ul li a:hover {
 .hero-text{
     margin-top: 2%;
 }
+
+.portfolio{
+    border: 5px solid red;
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.portfolio h1{
+    font-size: 5rem;
+    color: #212529;
+    align-items: center;
+    justify-content: center;
+}
+.port-h{
+    border: 5px solid red;
+
+}
+.sep{
+    width: 50%;
+}
+
+.cards{
+    border: 5px solid blue;
+    display: flex;
+    flex-direction: column;
+    padding:2rem;
+    /* flex-wrap: wrap; */
+}
+
+.card{
+    border: 5px solid green;
+    width: 60%;
+    height: auto;
+    border-radius: 20px;
+    /* margin: 5%; */
+
+}
+
+.top-imgs{
+    width: 100%;
+    border: 5px solid pink;
+    display: flex;
+    /* margin: 7%; */
+    /* justify-content: space-around; */
+    align-items: center;
+    justify-content: center;
+    margin-left: 7%;
+
+
+}
+
+.btm-imgs{
+    border: 5px solid black;
+    display: flex;
+    margin-top: 6%;
+    margin-left: 7%;
+}
