@@ -6,13 +6,16 @@ function reset() {
     document.getElementById("email_address").value = "";
     document.getElementById("phone_nb").value = "";
     document.getElementById("msg").value = "";
+    document.getElementById("alert-error").li.value = "";
+    $("#alert-error").empty();
+    // $('#alert-error div').empty();
 
 }
 
 // A function that validate the full name (minimum length 5)
 function validateName(name) {
     if (name.length < 5) {
-        const node = document.createElement("li");
+        const node = document.createElement("p");
         const textnode = document.createTextNode("Invalid full name, should be at least 5 characters long");
         node.appendChild(textnode);
         error_box.appendChild(node);
@@ -40,9 +43,45 @@ function validateEmail(email){
         node.appendChild(textnode);
         error_box.appendChild(node);
         }
+    }
+}
+
+// A function that validates the phone number
+function validatePhoneNb(phone_nbr){
+
+    if(phone_nbr.length<11){
+        const node = document.createElement("li");
+        const textnode = document.createTextNode("Invalid phone number. Too short.");
+        node.appendChild(textnode);
+        error_box.appendChild(node);
+    }
+    else{
+    let start_code = phone_nbr.slice(0, 4);
+    if(start_code!="+961"){
+        const node = document.createElement("li");
+        const textnode = document.createTextNode("Invalid email. Should start with +961");
+        node.appendChild(textnode);
+        error_box.appendChild(node);
+    }
+    else{
+        if(phone_nbr.charAt(4)==3 && (phone_nbr.slice(5).isNan()==false || phone_nbr.slice(5).length!=6)){
+            const node = document.createElement("li");
+            const textnode = document.createTextNode("Invalid email.");
+            node.appendChild(textnode);
+            error_box.appendChild(node);
+        }
+
+        else if(phone_nbr.slice(4).length!=8){
+            const node = document.createElement("li");
+            const textnode = document.createTextNode("Invalid email.");
+            node.appendChild(textnode);
+            error_box.appendChild(node);
+        }
 
     }
 }
+}
+
 
 
 
@@ -63,6 +102,9 @@ function main() {
 
     validateName(full_name);
     validateEmail(email);
+
+    validatePhoneNb(phone_nbr);
+    
 
 
 }
