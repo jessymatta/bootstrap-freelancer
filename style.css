@@ -354,6 +354,15 @@ background-color: black;
 
 }
 
+.alert{
+    border:5px solid blue;
+    padding:5rem;
+    background-color: red;
+    width:50%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
 
 /* Media queries */
 

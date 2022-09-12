@@ -139,9 +139,14 @@
             <input id="phone_nb">
             <label>Message</label>
             <textarea  id="msg" rows="10" cols="60" wrap="virtual"></textarea>
-            <button class="form-btn-send" onclick="main()">Send</button>
+            <button type="button" class="form-btn-send" id="send-btn" onclick="main()">Send</button>
+            <button type="button" class="form-btn-send" id="reset-btn" onclick="reset()">Reset</button>
 
         </form>
+
+        <div id="alert-error" class="alert">
+
+        </div>
 
 
     </section>
