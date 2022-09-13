@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Noto Sans', sans-serif;
+    /* border: 1px solid red; */
 }
 
 
@@ -154,6 +155,7 @@ nav ul li a:hover {
 .hero-heading {
     font-size: 4rem;
 }
+
 
 .hero-text {
     margin-top: 2%;
@@ -360,14 +362,14 @@ form input {
 /* footer */
 
 .footer-card {
-
-    width: 33%;
+    border: 3px solid red;
+    width: 300px;
     height: 20vh;
     padding: 1rem;
 }
 
 .top-footer {
-
+    border: 10px solid green;
     width: 100%;
     height: auto;
     margin-top: 5%;
@@ -418,17 +420,28 @@ form input {
 .alert {
     border: none;
     padding: 5rem;
-    background-color: rgb(215, 113, 113);
+    /* background-color: rgb(113, 215, 154); */
+    background-color:white;
     width: 50%;
     margin: 0 auto;
     margin-top: 10px;
 }
 
-.link-footer{
+.link-footer {
     text-decoration: underline;
     color: #1ABC9C;
 }
+
 /* Media queries */
+
+
+
+
+
+
+
+
+
 
 /* For mobile devices */
 @media only screen and (min-width: 250px) and (max-width: 480px) {
@@ -444,8 +457,8 @@ form input {
 
     .top-nav {
         width: 100%;
-
     }
+
 
     .nav-button {
         font-size: 8px;
@@ -467,8 +480,8 @@ form input {
         width: 100%;
         font-size: 2rem;
         text-align: center;
-margin: 0 auto;
-/* margin-right:0.5rem ; */
+        margin: 0 auto;
+        /* margin-right:0.5rem ; */
         /* margin-right: 30vw; */
     }
 
@@ -512,15 +525,17 @@ margin: 0 auto;
     .icons-nav2 {
         display: none;
     }
+
     .abt-content {
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin:0;
-        padding:0;
+        margin: 0;
+        padding: 0;
     }
-    .abt-content button{
-        width:100px;
+
+    .abt-content button {
+        width: 100px;
     }
 
     .abt-ctn-left {
@@ -549,14 +564,14 @@ margin: 0 auto;
     .form-btn-send {
         width: 100%
     }
-.footer-icons-container{
-    width:100%;
-}
 
-.mobile-btn{
-    width:100vw;
-}
+    .footer-icons-container {
+        width: 100%;
+    }
 
+    .mobile-btn {
+        width: 100vw;
+    }
 
 
 

@@ -1,4 +1,5 @@
 const error_box = document.getElementById("alert-error");
+var error=false;
 
 //A reset function to reset all inputs when reset btn is clicked
 function reset() {
@@ -6,21 +7,12 @@ function reset() {
     document.getElementById("email_address").value = "";
     document.getElementById("phone_nb").value = "";
     document.getElementById("msg").value = "";
-
-    //note that clearing the div did not work properly so error msgs wont reset
-    // document.getElementById("alert-error").li.value = "";
-    // $("#alert-error li").empty();
-    // document.getElementById("alert-error").innerHTML = "";
-    // clearBox('alert-error');
 }
-// error_box.style.backgroundColor = "blue";
 
-function clearBox(elementID) {
-    var div = document.getElementById(elementID);
-
-    while (div.firstChild) {
-        div.removeChild(div.firstChild);
-    }
+// A function that resets the content of the div to its initial state
+function resetDiv() {
+    error_box.style.backgroundColor = "white"; 
+    document.getElementById("alert-error").innerHTML = "";
 }
 
 // A function that validate the full name (minimum length 5)
@@ -30,8 +22,12 @@ function validateName(name) {
         const textnode = document.createTextNode("Invalid full name, should be at least 5 characters long");
         node.appendChild(textnode);
         error_box.appendChild(node);
+        error=true;
     }
 }
+
+
+
 
 // A function that validates Email addresses
 function validateEmail(email) {
@@ -46,6 +42,7 @@ function validateEmail(email) {
         const textnode = document.createTextNode("Invalid email.Email should be of the form someone@someone");
         node.appendChild(textnode);
         error_box.appendChild(node);
+        error=true;
     }
     else {
         if (email_array[0].length < 3 || email_array[1].length < 5) {
@@ -53,6 +50,7 @@ function validateEmail(email) {
             const textnode = document.createTextNode("Invalid email. Should be at least 3 characters before @ and 5 after it.");
             node.appendChild(textnode);
             error_box.appendChild(node);
+            error=true;
         }
     }
 }
@@ -65,6 +63,7 @@ function validatePhoneNb(phone_nbr) {
         const textnode = document.createTextNode("Invalid phone number. Too short.");
         node.appendChild(textnode);
         error_box.appendChild(node);
+        error=true;
     }
     else {
         let start_code = phone_nbr.slice(0, 4);
@@ -73,6 +72,7 @@ function validatePhoneNb(phone_nbr) {
             const textnode = document.createTextNode("Invalid email. Should start with +961");
             node.appendChild(textnode);
             error_box.appendChild(node);
+            error=true;
         }
         else {
             if (phone_nbr.charAt(4) == 3 && (phone_nbr.slice(5).isNan() == false || phone_nbr.slice(5).length != 6)) {
@@ -80,6 +80,7 @@ function validatePhoneNb(phone_nbr) {
                 const textnode = document.createTextNode("Invalid email.");
                 node.appendChild(textnode);
                 error_box.appendChild(node);
+                error=true;
             }
 
             else if (phone_nbr.slice(4).length != 8) {
@@ -87,6 +88,7 @@ function validatePhoneNb(phone_nbr) {
                 const textnode = document.createTextNode("Invalid email.");
                 node.appendChild(textnode);
                 error_box.appendChild(node);
+                error=true;
             }
 
         }
@@ -100,6 +102,7 @@ function validateMsg(msg) {
         const textnode = document.createTextNode("Messages should be at least 100 characters long.");
         node.appendChild(textnode);
         error_box.appendChild(node);
+        error=true;
     }
 }
 
@@ -119,11 +122,23 @@ function main() {
     let msg = document.getElementById("msg").value;
     console.log(msg);
 
+
+
     validateName(full_name);
     validateEmail(email);
 
     validatePhoneNb(phone_nbr);
     validateMsg(msg);
+    console.log(error);
+
+    if (error==true){
+        error_box.style.backgroundColor ="rgb(215, 113, 113)";
+    }
+
+    else if (error==false){
+        error_box.style.backgroundColor ="rgb(113, 215, 154)";
+        error_box.innerHTML ="Successfully submitted form";
+    }
 
 
 
