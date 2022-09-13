@@ -7,12 +7,14 @@ function reset() {
     document.getElementById("email_address").value = "";
     document.getElementById("phone_nb").value = "";
     document.getElementById("msg").value = "";
+    
 }
 
 // A function that resets the content of the div to its initial state
 function resetDiv() {
     error_box.style.backgroundColor = "white"; 
     document.getElementById("alert-error").innerHTML = "";
+    error=false;
 }
 
 // A function that validate the full name (minimum length 5)
@@ -134,7 +136,6 @@ function main() {
     if (error==true){
         error_box.style.backgroundColor ="rgb(215, 113, 113)";
     }
-
     else if (error==false){
         error_box.style.backgroundColor ="rgb(113, 215, 154)";
         error_box.innerHTML ="Successfully submitted form";
