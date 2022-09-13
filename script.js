@@ -113,34 +113,43 @@ function validateMsg(msg) {
 function main() {
 
     let full_name = document.getElementById("full_name").value;
-    console.log(full_name);
-
     let email = document.getElementById("email_address").value;
-    console.log(email);
-
     let phone_nbr = document.getElementById("phone_nb").value;
-    console.log(phone_nbr);
-
     let msg = document.getElementById("msg").value;
-    console.log(msg);
-
-
 
     validateName(full_name);
     validateEmail(email);
-
     validatePhoneNb(phone_nbr);
     validateMsg(msg);
     console.log(error);
 
     if (error==true){
         error_box.style.backgroundColor ="rgb(215, 113, 113)";
+
+
+
+
     }
     else if (error==false){
         error_box.style.backgroundColor ="rgb(113, 215, 154)";
         error_box.innerHTML ="Successfully submitted form";
     }
 
+}
 
+// Added for the php db assignment
+function submitToDb(){
+    let form = document.querySelector("#form-id");
+    const data = new URLSearchParams();
+
+    for (const p of new FormData(form)){
+        data.append(p[0],p[1]);
+}
+
+fetch
 
 }
+
+
+
+
