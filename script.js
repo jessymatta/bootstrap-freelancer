@@ -159,7 +159,4 @@ if (error == false) {
     });
 }
 
-//added to display messages on messages.html
-
-
 
