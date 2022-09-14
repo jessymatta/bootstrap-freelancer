@@ -362,14 +362,14 @@ form input {
 /* footer */
 
 .footer-card {
-    border: 3px solid red;
-    width: 300px;
+
+    width: 33%;
     height: 20vh;
     padding: 1rem;
 }
 
 .top-footer {
-    border: 10px solid green;
+
     width: 100%;
     height: auto;
     margin-top: 5%;

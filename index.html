@@ -157,13 +157,13 @@
 
         <form class="ctc-me-form" id="form-id">
             <label>Full name</label>
-            <input id="full_name">
+            <input id="full_name" name="full_name">
             <label>Email address</label>
-            <input id="email_address">
+            <input id="email_address" name="email_address">
             <label>Phone number</label>
-            <input id="phone_nb">
+            <input id="phone_nb" name="phone_nb">
             <label>Message</label>
-            <textarea id="msg" rows="10" cols="60" wrap="virtual"></textarea>
+            <textarea name="msg" id="msg" rows="10" cols="60" wrap="virtual"></textarea>
             <button type="submit" class="form-btn-send" id="send-btn" onclick="main()">Send</button>
             <button type="button" class="form-btn-send" id="reset-btn" onclick="reset();resetDiv()">Reset</button>
         </form>
