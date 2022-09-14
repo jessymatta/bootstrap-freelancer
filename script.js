@@ -121,11 +121,11 @@ function main() {
     validateEmail(email);
     validatePhoneNb(phone_nbr);
     validateMsg(msg);
-    console.log(error);
+    console.log("TRUE OR FALSE? "+ error);
 
     if (error == true) {
         error_box.style.backgroundColor = "rgb(215, 113, 113)";
-        submitToDb();
+   
     }
     else if (error == false) {
         error_box.style.backgroundColor = "rgb(113, 215, 154)";
@@ -134,7 +134,9 @@ function main() {
 
 }
 
-if (error == true) {
+//added to add data to the db
+if (error == false) {
+    console.log("Successfully submitted form");
 
     const my_form = document.getElementById('form-id');
 
@@ -156,5 +158,8 @@ if (error == true) {
         })
     });
 }
+
+//added to display messages on messages.html
+
 
 
