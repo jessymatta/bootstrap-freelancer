@@ -121,11 +121,11 @@ function main() {
     validateEmail(email);
     validatePhoneNb(phone_nbr);
     validateMsg(msg);
-    console.log("TRUE OR FALSE? "+ error);
+    console.log("TRUE OR FALSE? " + error);
 
     if (error == true) {
         error_box.style.backgroundColor = "rgb(215, 113, 113)";
-   
+
     }
     else if (error == false) {
         error_box.style.backgroundColor = "rgb(113, 215, 154)";
